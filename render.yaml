@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tracex-free-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8916064717:AAHA-x5PfkIV9UwipHX-kPg08QhT7TkBYIg
+      - key: BOT_USERNAME
+        value: SANJEET_PAPA444_BOT
+      - key: API_URL
+        value: https://tracexdata-api.onrender.com/api/lookup?key=Pvttbott&number={number}
+        
